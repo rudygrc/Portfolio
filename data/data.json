@@ -1,70 +1,80 @@
 {
-  "name": "Rudolf Garia",
+  "name": "Rudolf Garcia",
   "logoFirst": "rudolf",
   "logoLast": "garcia",
   "email": "rudolfgarcia28@gmail.com",
   "github": "https://github.com/rudygrc",
   "linkedin": "https://linkedin.com/in/rudolf-garcia-86b149236",
-  "resume": "/resume.pdf",
+  "resume": "assets/resume/resume.pdf",
   "status": "open to work",
 
   "hero": {
-    "eyebrow": "SOFTWARE DEVELOPER",
+    "eyebrow": "WEB DEVELOPER",
     "headline": "Building things that work, and work well",
-    "sub": "I'm Rudolf Garia — I design and ship backend-leaning web applications, with a soft spot for clean APIs, fast pages, and code reviews that teach something. Currently building at",
-    "currentCompany": "[Current Company]",
-    "stack": ["TypeScript", "Node.js", "React", "PostgreSQL", "AWS", "Go"]
+    "sub": "I'm Rudolf Garcia — a web developer who also builds 3D web environments and automates workflows behind the scenes. I care about clean interfaces, reliable back-end plumbing, and code that's easy to hand off. Currently building at",
+    "currentCompany": "PhilMech",
+    "stack": ["JavaScript", "PHP", "WordPress", "A-Frame (3D Web)", "HTML/CSS", "SQL"]
   },
 
   "projects": [
     {
-      "hash": "a3f9c1",
-      "title": "Project One — Real-time collaboration tool",
-      "description": "Replace with a 1–2 sentence description: what it does, who it's for, and the one technical decision you're proudest of.",
-      "repo": "https://github.com/rudygrc/project-one",
-      "live": "#",
-      "tags": ["Next.js", "WebSockets", "Redis"]
-    },
-    {
-      "hash": "7bd2e0",
-      "title": "Project Two — CLI tool for <task>",
-      "description": "Replace with a short description. Mention scale or impact if you have a number: users, requests/sec, time saved.",
-      "repo": "https://github.com/rudygrc/project-two",
+      "hash": "b4e91a",
+      "title": "Virtual Biobank — 3D Specimen Digitization",
+      "description": "A web-based virtual biobank for insect specimens: photogrammetry scans turned into interactive 3D models, viewable in an A-Frame environment with HTML/CSS wireframes for the walkthrough and navigation.",
+      "repo": "",
       "live": "",
-      "tags": ["Go", "Cobra"]
+      "tags": ["A-Frame", "Photogrammetry", "RealityScan", "HTML/CSS"]
     },
     {
-      "hash": "1f88ac",
-      "title": "Project Three — <name it>",
-      "description": "Third project slot — swap this out, or delete the entry if you only want two. Keep descriptions concrete, not marketing-speak.",
-      "repo": "https://github.com/rudygrc/project-three",
-      "live": "#",
-      "tags": ["Python", "FastAPI", "Docker"]
+      "hash": "c27f5d",
+      "title": "WordPress & Elementor Client Sites",
+      "description": "Built and maintained client websites on WordPress/Elementor, including SMTP email configuration and PayPal payment integration, plus ongoing updates and maintenance.",
+      "repo": "",
+      "live": "",
+      "tags": ["WordPress", "Elementor", "PayPal API", "SMTP"]
+    },
+    {
+      "hash": "d81a03",
+      "title": "RCEF Utilization Monitoring System",
+      "description": "An Excel-based monitoring system for farm machinery utilization reports from 67 provinces — VBA macros and formulas handle data cleaning, table organizing, and report consolidation from raw submissions.",
+      "repo": "",
+      "live": "",
+      "tags": ["Excel VBA", "Data Cleaning", "Reporting"]
     }
   ],
 
   "about": {
     "paragraphs": [
-      "Short bio paragraph: how you got into development, what kind of problems you like solving, and what you're looking for next (role, team, or industry). Two to three sentences is plenty.",
-      "Optional second paragraph — something specific and human: a side project, an open-source habit, a talk you gave, or what you do away from the keyboard."
+      "I'm an IT graduate who works across web development, 3D digitization, and workflow automation. Right now I'm a Science Research Analyst building a virtual biobank — digitizing specimens through photogrammetry and building the 3D web environments that display them.",
+      "Before that, I built WordPress sites for clients and handled everything from payment integration to email setup. I like picking up new tools quickly, and I'm just as comfortable behind a spreadsheet automating a report as I am behind a code editor."
     ],
     "skillGroups": [
       {
-        "title": "Languages",
+        "title": "Web Development",
         "items": [
-          { "name": "TypeScript / JavaScript", "level": "daily" },
-          { "name": "Python", "level": "daily" },
-          { "name": "Go", "level": "comfortable" },
+          { "name": "WordPress / Elementor", "level": "daily" },
+          { "name": "HTML / CSS", "level": "daily" },
+          { "name": "JavaScript", "level": "comfortable" },
+          { "name": "PHP", "level": "comfortable" },
           { "name": "SQL", "level": "comfortable" }
         ]
       },
       {
-        "title": "Tools & platforms",
+        "title": "3D & Digitization",
         "items": [
-          { "name": "React / Next.js", "level": "daily" },
-          { "name": "PostgreSQL", "level": "daily" },
-          { "name": "AWS", "level": "comfortable" },
-          { "name": "Docker", "level": "comfortable" }
+          { "name": "A-Frame (3D Web)", "level": "daily" },
+          { "name": "Photogrammetry", "level": "daily" },
+          { "name": "RealityScan", "level": "comfortable" }
+        ]
+      },
+      {
+        "title": "Automation & Tools",
+        "items": [
+          { "name": "Microsoft Office", "level": "daily" },
+          { "name": "Excel VBA", "level": "daily" },
+          { "name": "Google Apps Script", "level": "daily" },
+          { "name": "Google Suite", "level": "comfortable" },
+          { "name": "Canva", "level": "comfortable" }
         ]
       }
     ]
@@ -72,7 +82,7 @@
 
   "footer": {
     "heading": "Let's build something.",
-    "copyright": "© 2026 Rudolf Garia",
+    "copyright": "© 2026 Rudolf Garcia",
     "tagline": "Built with HTML, CSS, and a little too much coffee"
   }
 }

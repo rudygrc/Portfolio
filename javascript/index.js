@@ -18,7 +18,7 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-function renderNav(data) {
+function renderNav(data) {  
   document.getElementById('nav-logo').innerHTML =
     `${escapeHtml(data.logoFirst)}<span>@</span>${escapeHtml(data.logoLast)}`;
   document.getElementById('nav-status').innerHTML =
