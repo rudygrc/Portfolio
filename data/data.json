@@ -1,0 +1,88 @@
+{
+  "name": "Rudolf Garcia",
+  "logoFirst": "rudolf",
+  "logoLast": "garcia",
+  "email": "rudolfgarcia28@gmail.com",
+  "github": "https://github.com/rudygrc",
+  "linkedin": "https://linkedin.com/in/rudolf-garcia-86b149236",
+  "resume": "assets/resume/resume.pdf",
+  "status": "open to work",
+
+  "hero": {
+    "eyebrow": "WEB DEVELOPER",
+    "headline": "Building things that work, and work well",
+    "sub": "I'm Rudolf Garcia — a web developer who also builds 3D web environments and automates workflows behind the scenes. I care about clean interfaces, reliable back-end plumbing, and code that's easy to hand off. Currently building at",
+    "currentCompany": "PhilMech",
+    "stack": ["JavaScript", "PHP", "WordPress", "A-Frame (3D Web)", "HTML/CSS", "SQL"]
+  },
+
+  "projects": [
+    {
+      "hash": "b4e91a",
+      "title": "Virtual Biobank — 3D Specimen Digitization",
+      "description": "A web-based virtual biobank for insect specimens: photogrammetry scans turned into interactive 3D models, viewable in an A-Frame environment with HTML/CSS wireframes for the walkthrough and navigation.",
+      "repo": "",
+      "live": "",
+      "tags": ["A-Frame", "Photogrammetry", "RealityScan", "HTML/CSS"]
+    },
+    {
+      "hash": "c27f5d",
+      "title": "WordPress & Elementor Client Sites",
+      "description": "Built and maintained client websites on WordPress/Elementor, including SMTP email configuration and PayPal payment integration, plus ongoing updates and maintenance.",
+      "repo": "",
+      "live": "",
+      "tags": ["WordPress", "Elementor", "PayPal API", "SMTP"]
+    },
+    {
+      "hash": "d81a03",
+      "title": "RCEF Utilization Monitoring System",
+      "description": "An Excel-based monitoring system for farm machinery utilization reports from 67 provinces — VBA macros and formulas handle data cleaning, table organizing, and report consolidation from raw submissions.",
+      "repo": "",
+      "live": "",
+      "tags": ["Excel VBA", "Data Cleaning", "Reporting"]
+    }
+  ],
+
+  "about": {
+    "paragraphs": [
+      "I'm an IT graduate who works across web development, 3D digitization, and workflow automation. Right now I'm a Science Research Analyst building a virtual biobank — digitizing specimens through photogrammetry and building the 3D web environments that display them.",
+      "Before that, I built WordPress sites for clients and handled everything from payment integration to email setup. I like picking up new tools quickly, and I'm just as comfortable behind a spreadsheet automating a report as I am behind a code editor."
+    ],
+    "skillGroups": [
+      {
+        "title": "Web Development",
+        "items": [
+          { "name": "WordPress / Elementor", "level": "daily" },
+          { "name": "HTML / CSS", "level": "daily" },
+          { "name": "JavaScript", "level": "comfortable" },
+          { "name": "PHP", "level": "comfortable" },
+          { "name": "SQL", "level": "comfortable" }
+        ]
+      },
+      {
+        "title": "3D & Digitization",
+        "items": [
+          { "name": "A-Frame (3D Web)", "level": "daily" },
+          { "name": "Photogrammetry", "level": "daily" },
+          { "name": "RealityScan", "level": "comfortable" }
+        ]
+      },
+      {
+        "title": "Automation & Tools",
+        "items": [
+          { "name": "Microsoft Office", "level": "daily" },
+          { "name": "Excel VBA", "level": "daily" },
+          { "name": "Google Apps Script", "level": "daily" },
+          { "name": "Google Suite", "level": "comfortable" },
+          { "name": "Canva", "level": "comfortable" }
+        ]
+      }
+    ]
+  },
+
+  "footer": {
+    "heading": "Let's build something.",
+    "copyright": "© 2026 Rudolf Garcia",
+    "tagline": "Built with HTML, CSS, and a little too much coffee"
+  }
+}

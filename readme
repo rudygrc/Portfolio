@@ -1,0 +1,139 @@
+# Your Portfolio
+
+A single-file, no-build portfolio site — just HTML/CSS/JS, ready for GitHub Pages.
+
+## Publish it in 5 minutes
+
+1. Create a new GitHub repo named `yourusername.github.io` (use your actual GitHub username — this exact name gives you a free URL at `https://yourusername.github.io`).
+2. Upload `index.html` to the root of that repo (drag-and-drop works fine on github.com, or `git push`).
+3. Go to the repo's **Settings → Pages**, and under "Build and deployment," set Source to **Deploy from a branch**, branch `main`, folder `/ (root)`. Save.
+4. Wait a minute, then visit `https://yourusername.github.io`. That's it — live and free.
+
+If you'd rather keep it in an existing repo instead of a dedicated `username.github.io` one, that also works: Pages will publish it at `https://yourusername.github.io/repo-name`.
+
+## What to edit
+
+Everything you need to personalize lives in `index.html`. Search for and replace:
+
+- `Jordan Cole` — your name (appears in the nav, `<title>`, footer)
+- `[Current Company]` — or delete that sentence
+- The three `.entry` blocks under `<!-- work -->`-ish area — swap in your real projects: title, description, repo/live links, tech tags. Delete or duplicate entries as needed.
+- `jordan@example.com`, `github.com/yourusername`, `linkedin.com/in/yourusername` — your real links
+- `/resume.pdf` — either remove that link or add a `resume.pdf` file to the repo root
+- The `stack-tags` in the hero — your actual core stack
+- The "Languages" / "Tools & platforms" lists under About
+
+# Your Portfolio
+
+Three files, no build step, ready for GitHub Pages:
+
+- `index.html` — structure and content
+- `style.css` — all design/layout rules
+- `script.js` — the scroll-animation setup
+
+## Publish it in 5 minutes
+
+1. Create a new GitHub repo named `yourusername.github.io` (use your actual GitHub username — this exact name gives you a free URL at `https://yourusername.github.io`).
+2. Upload all three files (`index.html`, `style.css`, `script.js`) to the root of that repo — keep them in the same folder, since `index.html` links to the other two by relative path.
+3. Go to the repo's **Settings → Pages**, and under "Build and deployment," set Source to **Deploy from a branch**, branch `main`, folder `/ (root)`. Save.
+4. Wait a minute, then visit `https://yourusername.github.io`. That's it — live and free.
+
+If you'd rather keep it in an existing repo instead of a dedicated `username.github.io` one, that also works: Pages will publish it at `https://yourusername.github.io/repo-name`.
+
+# Your Portfolio
+
+Four files, no build step, ready for GitHub Pages:
+
+- `index.html` — page structure only (empty containers, no hardcoded content)
+- `data.json` — **all your content lives here**: name, bio, projects, skills, links
+- `style.css` — all design/layout rules
+- `script.js` — fetches `data.json` and renders it into the page, then starts the scroll animations
+
+## Publish it in 5 minutes
+
+1. Create a new GitHub repo named `yourusername.github.io` (use your actual GitHub username — this exact name gives you a free URL at `https://yourusername.github.io`).
+2. Upload all four files to the root of that repo, keeping them in the same folder — they reference each other by relative path.
+3. Go to the repo's **Settings → Pages**, and under "Build and deployment," set Source to **Deploy from a branch**, branch `main`, folder `/ (root)`. Save.
+4. Wait a minute, then visit `https://yourusername.github.io`. That's it — live and free.
+
+If you'd rather keep it in an existing repo instead of a dedicated `username.github.io` one, that also works: Pages will publish it at `https://yourusername.github.io/repo-name`.
+
+## What to edit
+
+Everything you need to personalize is now in **`data.json`** — no HTML editing required:
+
+- `name`, `logoFirst`, `logoLast` — your name, and how it splits for the `jordan@cole`-style logo
+- `email`, `github`, `linkedin`, `resume` — your real links
+- `status` — the little "open to work" label in the nav
+- `hero` — headline, subtext, current company, and your stack tags
+- `projects` — an array; add, remove, or reorder entries freely. Leave `"live": ""` to hide the Live link on a project that doesn't have one.
+- `about.paragraphs` — your bio, one string per paragraph
+- `about.skillGroups` — an array of `{ title, items: [{ name, level }] }` groups; add as many groups or items as you want
+- `footer` — the closing heading, copyright line, and tagline
+
+Just edit the values — the quotes and commas need to stay valid JSON. If something breaks, check for a missing comma between entries or a stray trailing comma.
+
+## Previewing locally
+
+Browsers block a page from `fetch()`-ing a local file when you just double-click `index.html` (a `file://` security restriction) — you'll see a blank page and a console error. Two easy fixes:
+
+- **Just push to GitHub Pages** — it serves everything over https, so this isn't an issue there at all.
+- **Or preview locally** by running a tiny local server from the project folder:
+  ```
+  python3 -m http.server 8000
+  ```
+  then open `http://localhost:8000` in your browser. (Any local server works — this is just the one built into Python.)
+
+## Section backgrounds
+
+Each section carries its own full-bleed background, alternating light and dark for visual rhythm — the same editorial device as the site you linked, but built as original CSS/SVG artwork instead of hotlinked stock photos, so nothing to attribute and nothing that can break or disappear later:
+
+- **`.bg-mesh-dark`** (Hero, Contact) — a dark gradient "mesh" plus a faint hairline grid, defined in `style.css`.
+- **`.bg-dot-grid`** (Work) — a subtle dot-grid texture, blueprint-style.
+- **`.bg-topo`** (About) — soft crossed contour lines at low opacity.
+
+**Want real photos instead?** Add an `images/` folder next to `index.html`, drop your photos in (e.g. a headshot, a workspace shot, a screenshot), and in `style.css` add a background-image to the section you want, e.g.:
+
+```css
+.hero{
+  background-image: linear-gradient(rgba(11,13,20,0.75), rgba(11,13,20,0.9)), url('images/your-photo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+```
+
+The dark gradient overlay in that example keeps the white hero text readable on top of any photo — adjust the opacity numbers to taste.
+
+## Notes
+
+- No local dependencies — Bootstrap 5 and AOS both load from CDN via `<link>`/`<script>` tags in `index.html`. Fonts load from Google Fonts.
+- Bootstrap is included for its grid/utility classes and JS bundle (Popper + Bootstrap), if you want to add components like a mobile nav collapse, modals, or tooltips later. `style.css` is linked *after* Bootstrap, so it always wins the cascade.
+- Scroll animations run on [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/): project entries and section content fade in with a slight stagger as you scroll. Tweak timing in `script.js`.
+- Respects `prefers-reduced-motion` — the AOS animations, the hero cursor blink, and the status-dot pulse all disable themselves for users who've asked for reduced motion, and visible keyboard focus states are built in.
+- Text from `data.json` is HTML-escaped before it's inserted into the page, so characters like `<` or `>` in your bio or project descriptions render as plain text rather than being parsed as markup.
+
+
+Each section carries its own full-bleed background, alternating light and dark for visual rhythm — the same editorial device as the site you linked, but built as original CSS/SVG artwork instead of hotlinked stock photos, so nothing to attribute and nothing that can break or disappear later:
+
+- **`.bg-mesh-dark`** (Hero, Contact) — a dark gradient "mesh" plus a faint hairline grid, defined in `style.css`.
+- **`.bg-dot-grid`** (Work) — a subtle dot-grid texture, blueprint-style.
+- **`.bg-topo`** (About) — soft crossed contour lines at low opacity.
+
+**Want real photos instead?** Add an `images/` folder next to `index.html`, drop your photos in (e.g. a headshot, a workspace shot, a screenshot), and in `style.css` add a background-image to the section you want, e.g.:
+
+```css
+.hero{
+  background-image: linear-gradient(rgba(11,13,20,0.75), rgba(11,13,20,0.9)), url('images/your-photo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+```
+
+The dark gradient overlay in that example keeps the white hero text readable on top of any photo — adjust the opacity numbers to taste.
+
+## Notes
+
+- No local dependencies — Bootstrap 5 and AOS both load from CDN via `<link>`/`<script>` tags in `index.html`. Fonts load from Google Fonts.
+- Bootstrap is included for its grid/utility classes and JS bundle (Popper + Bootstrap), if you want to add components like a mobile nav collapse, modals, or tooltips later. `style.css` is linked *after* Bootstrap, so it always wins the cascade.
+- Scroll animations run on [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/): project entries and section content fade in with a slight stagger as you scroll. Tweak timing in `script.js`, or add `data-aos="fade-up"` (etc.) to any other element you want animated.
+- Respects `prefers-reduced-motion` — the AOS animations, the hero cursor blink, and the status-dot pulse all disable themselves for users who've asked for reduced motion, and visible keyboard focus states are built in.
