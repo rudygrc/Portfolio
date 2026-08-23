@@ -96,7 +96,7 @@ function renderFooter(data) {
 
 async function loadPortfolio() {
   try {
-    const res = await fetch('data/data.json');
+    const res = await fetch('data.json');
     if (!res.ok) throw new Error(`data.json responded with ${res.status}`);
     const data = await res.json();
 
