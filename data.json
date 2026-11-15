@@ -11,52 +11,53 @@
   "hero": {
     "eyebrow": "WEB DEVELOPER",
     "headline": "Building things that work, and work well",
-    "sub": "I'm Rudolf Garcia — a web developer who also builds 3D web environments and automates workflows behind the scenes. I care about clean interfaces, reliable back-end plumbing, and code that's easy to hand off. Currently building at",
-    "currentCompany": "PhilMech",
-    "stack": ["JavaScript", "PHP", "WordPress", "A-Frame (3D Web)", "HTML/CSS", "SQL"]
+    "sub": "I'm Rudolf Garcia — a web developer who supports government information systems end-to-end: requirements, development, testing, documentation, and training. I also build 3D web environments and automate workflows behind the scenes. Currently a",
+    "currentCompany": "Computer Programmer I at PhilMech",
+    "stack": ["JavaScript", "PHP", "C#/.NET", "PostgreSQL", "A-Frame (3D Web)", "Git"]
   },
 
   "projects": [
     {
+      "hash": "e5a271",
+      "title": "Geotagging App — Field Monitoring Platform",
+      "description": "A web and mobile platform for geotagging monitored government projects, with real-time upload to a central dashboard. I contribute to development and debugging, and train Operations Division users on it.",
+      "repo": "",
+      "live": "",
+      "tags": ["JavaScript", "Android", "Real-time Sync"]
+    },
+    {
       "hash": "b4e91a",
       "title": "Virtual Biobank — 3D Specimen Digitization",
-      "description": "A web-based virtual biobank for insect specimens: photogrammetry scans turned into interactive 3D models, viewable in an A-Frame environment with HTML/CSS wireframes for the walkthrough and navigation.",
+      "description": "A 3D walkthrough of digitized insect specimens, built with JavaScript and A-Frame on a C#/.NET and PostgreSQL back end. Specimens are captured via photogrammetry and organized with metadata templates and taxonomy standards.",
       "repo": "",
       "live": "",
-      "tags": ["A-Frame", "Photogrammetry", "RealityScan", "HTML/CSS"]
+      "tags": ["A-Frame", "Photogrammetry", "C#/.NET", "PostgreSQL"]
     },
     {
-      "hash": "c27f5d",
-      "title": "WordPress & Elementor Client Sites",
-      "description": "Built and maintained client websites on WordPress/Elementor, including SMTP email configuration and PayPal payment integration, plus ongoing updates and maintenance.",
+      "hash": "f193c8",
+      "title": "EDSS Monitoring Website",
+      "description": "A web tool tracking implementation of six Enterprise Development Sustainability Support projects under the RCEF Mechanization Program, built to support reporting across farmers' cooperatives, LGUs, and other stakeholders.",
       "repo": "",
       "live": "",
-      "tags": ["WordPress", "Elementor", "PayPal API", "SMTP"]
-    },
-    {
-      "hash": "d81a03",
-      "title": "RCEF Utilization Monitoring System",
-      "description": "An Excel-based monitoring system for farm machinery utilization reports from 67 provinces — VBA macros and formulas handle data cleaning, table organizing, and report consolidation from raw submissions.",
-      "repo": "",
-      "live": "",
-      "tags": ["Excel VBA", "Data Cleaning", "Reporting"]
+      "tags": ["Web App", "Stakeholder Reporting"]
     }
   ],
 
   "about": {
     "paragraphs": [
-      "I'm an IT graduate who works across web development, 3D digitization, and workflow automation. Right now I'm a Science Research Analyst building a virtual biobank — digitizing specimens through photogrammetry and building the 3D web environments that display them.",
-      "Before that, I built WordPress sites for clients and handled everything from payment integration to email setup. I like picking up new tools quickly, and I'm just as comfortable behind a spreadsheet automating a report as I am behind a code editor."
+      "I'm an IT graduate and application developer with 3+ years at PhilMech (Department of Agriculture), where I've moved through four roles across three divisions — from consolidating farm machinery data by hand to now writing functional specs, running UAT, and maintaining systems as a Computer Programmer I.",
+      "Along the way I've automated a 30,000-row reporting workflow with Excel VBA and Apps Script (cutting about two days of manual work), digitized specimens through photogrammetry, and built the 3D web environments that display them. I like translating field needs into clear specs just as much as writing the code itself."
     ],
     "skillGroups": [
       {
-        "title": "Web Development",
+        "title": "Web & Programming",
         "items": [
-          { "name": "WordPress / Elementor", "level": "daily" },
+          { "name": "JavaScript", "level": "daily" },
           { "name": "HTML / CSS", "level": "daily" },
-          { "name": "JavaScript", "level": "comfortable" },
           { "name": "PHP", "level": "comfortable" },
-          { "name": "SQL", "level": "comfortable" }
+          { "name": "C# / .NET", "level": "comfortable" },
+          { "name": "SQL / PostgreSQL", "level": "comfortable" },
+          { "name": "WordPress / Elementor", "level": "comfortable" }
         ]
       },
       {
@@ -68,13 +69,19 @@
         ]
       },
       {
-        "title": "Automation & Tools",
+        "title": "Tools & Practices",
         "items": [
-          { "name": "Microsoft Office", "level": "daily" },
+          { "name": "Git / GitHub", "level": "daily" },
+          { "name": "Functional & UAT Testing", "level": "daily" },
+          { "name": "Technical Documentation", "level": "daily" }
+        ]
+      },
+      {
+        "title": "Automation & Data",
+        "items": [
           { "name": "Excel VBA", "level": "daily" },
           { "name": "Google Apps Script", "level": "daily" },
-          { "name": "Google Suite", "level": "comfortable" },
-          { "name": "Canva", "level": "comfortable" }
+          { "name": "Data Validation & Metadata", "level": "comfortable" }
         ]
       }
     ]
