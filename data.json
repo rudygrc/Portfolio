@@ -11,9 +11,9 @@
   "hero": {
     "eyebrow": "WEB DEVELOPER",
     "headline": "Building things that work, and work well",
-    "sub": "I'm Rudolf Garcia — a web developer who supports government information systems end-to-end: requirements, development, testing, documentation, and training. I also build 3D web environments and automate workflows behind the scenes. Currently a",
+    "sub": "I'm Rudolf Garcia — a web developer who supports government information systems end-to-end: requirements, development, testing, documentation, and training. I also build 3D web environments, work on ESP32 microcontroller projects, and automate workflows behind the scenes. Currently a",
     "currentCompany": "Computer Programmer I at PhilMech",
-    "stack": ["JavaScript", "PHP", "C#/.NET", "PostgreSQL", "A-Frame (3D Web)", "Git"]
+    "stack": ["JavaScript", "PHP", "C#/.NET", "PostgreSQL", "A-Frame (3D Web)", "ESP32", "Git"]
   },
 
   "projects": [
@@ -34,6 +34,14 @@
       "tags": ["A-Frame", "Photogrammetry", "C#/.NET", "PostgreSQL"]
     },
     {
+      "hash": "c7d204",
+      "title": "Automated Pin Holder — 3D Insect Imaging",
+      "description": "An ESP32-based automated pin holder that supports image capture of insect specimens for photogrammetry. Developed with the project team as part of the biobanking work, combining a microcontroller, mechanical parts, and software.",
+      "repo": "",
+      "live": "",
+      "tags": ["ESP32", "Microcontroller", "Photogrammetry"]
+    },
+    {
       "hash": "f193c8",
       "title": "EDSS Monitoring Website",
       "description": "A web tool tracking implementation of six Enterprise Development Sustainability Support projects under the RCEF Mechanization Program, built to support reporting across farmers' cooperatives, LGUs, and other stakeholders.",
@@ -46,7 +54,7 @@
   "about": {
     "paragraphs": [
       "I'm an IT graduate and application developer with 3+ years at PhilMech (Department of Agriculture), where I've moved through four roles across three divisions — from consolidating farm machinery data by hand to now writing functional specs, running UAT, and maintaining systems as a Computer Programmer I.",
-      "Along the way I've automated a 30,000-row reporting workflow with Excel VBA and Apps Script (cutting about two days of manual work), digitized specimens through photogrammetry, and built the 3D web environments that display them. I like translating field needs into clear specs just as much as writing the code itself."
+      "Along the way I've automated a 30,000-row reporting workflow with Excel VBA and Apps Script (cutting about two days of manual work), digitized specimens through photogrammetry, helped build an ESP32-based pin holder that automates specimen imaging, and built the 3D web environments that display them. I like translating field needs into clear specs just as much as writing the code itself."
     ],
     "skillGroups": [
       {
@@ -69,6 +77,12 @@
         ]
       },
       {
+        "title": "Hardware & Embedded",
+        "items": [
+          { "name": "ESP32 Microcontroller", "level": "comfortable" }
+        ]
+      },
+      {
         "title": "Tools & Practices",
         "items": [
           { "name": "Git / GitHub", "level": "daily" },
@@ -86,6 +100,19 @@
       }
     ]
   },
+
+  "certifications": [
+    {
+      "title": "Google Workspace and AI Tools (8-hour training)",
+      "issuer": "DICT Region III, ICT Literacy and Competency Development Bureau, through DICT Nueva Ecija",
+      "date": "October 2026"
+    },
+    {
+      "title": "Foundation Course on Intellectual Property Rights and Basic Patent Search",
+      "issuer": "PhilMech Technology Management and Training Division",
+      "date": "August 2026"
+    }
+  ],
 
   "footer": {
     "heading": "Let's build something.",
